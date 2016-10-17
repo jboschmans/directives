@@ -4,6 +4,9 @@ app.controller("MainCtrl", function(){});
 
 app.directive("helloWorld", function(){
   return {
+    scope: {
+      color: "="
+    },
     restrict: "AE",
     replace: true,
     template: "<p style='background-color:{{color}}'>Hello World</p>",
